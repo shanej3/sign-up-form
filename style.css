@@ -1,0 +1,39 @@
+.rightcontainer {
+    padding: 1.6rem; 
+}
+
+.header {
+    margin-bottom: 20px; 
+}
+
+#maintext {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#subtext {
+    font-size: rem;
+    color: gray;
+}
+
+.form-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between grid items */
+    border: 1px solid #000; 
+}
+
+.formblock {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    gap: 5px; /* Space between label and input */
+}
+
+.textbox {
+    padding: 0.5rem;
+    font-size: rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ensure the textbox takes the full width of the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
