@@ -1,17 +1,41 @@
+@font-face {
+    font-family: 'Mainfont';
+    src: url('/ranade-thin.otf');
+}
+
+:root {
+    --mainfont : 'Mainfont';
+    font-family : 'Mainfont';
+    --offwhite : rgb(228, 228, 228);
+}
+body {
+    display : grid;
+    grid-template-columns : 1fr 2fr;
+    margin : 0;
+    padding : 0;
+}
 .rightcontainer {
-    padding: 1.6rem; 
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(224, 224, 224);
 }
 
 .header {
-    margin-bottom: 20px; 
+   padding : 20px;
 }
 
 #maintext {
+    display : flex;
+    justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
+    font-family : var(--mainfont);
 }
 
 #subtext {
+    display : flex;
+    justify-content: center;
     font-size: rem;
     color: gray;
 }
@@ -20,10 +44,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 20px; /* Space between grid items */
-    border: 1px solid #000; 
+    background-color: white;
+    padding-top : 5rem;
+    padding-bottom : 5rem;
+    padding-left : 2rem;
+    padding-right : 2rem;
 }
 
 .formblock {
+
     display: flex;
     flex-direction: column; /* Stack label and input vertically */
     gap: 5px; /* Space between label and input */
@@ -36,4 +65,33 @@
     border-radius: 4px;
     width: 100%; /* Ensure the textbox takes the full width of the container */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#image {
+    height : 100vh;
+}
+
+.bottom {
+    display : flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#applybutton {
+    display : flex;
+    font-size : 1.5rem;
+    padding-right : 2rem;
+    padding-left : 2rem;
+    padding-top : 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+    border : none;
+    background-color: #076433;
+    border-radius : 1rem;
+    margin-top : 1rem;
+    margin-bottom : 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color : var(--offwhite);
 }
