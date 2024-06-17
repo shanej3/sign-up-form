@@ -14,12 +14,23 @@ body {
     margin : 0;
     padding : 0;
 }
+input:invalid {
+    border-color : red;
+}
+:focus {
+    background-color : rgb(216, 241, 250);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+a {
+    text-decoration: none;
+}
 .rightcontainer {
     display : flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgb(224, 224, 224);
 }
+
 
 .header {
    padding : 20px;
@@ -43,7 +54,7 @@ body {
 .form-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 20px; /* Space between grid items */
+    gap: 20px; 
     background-color: white;
     padding-top : 5rem;
     padding-bottom : 5rem;
@@ -55,7 +66,7 @@ body {
 
     display: flex;
     flex-direction: column; /* Stack label and input vertically */
-    gap: 5px; /* Space between label and input */
+    gap: 5px; 
 }
 
 .textbox {
@@ -63,12 +74,63 @@ body {
     font-size: rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 100%; /* Ensure the textbox takes the full width of the container */
+    width: 100%; 
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-#image {
+.leftcontainer {
+    z-index : 1;
     height : 100vh;
+    display : grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    align-items: center;
+}
+#mainimage {
+    height : 100%;
+    width : 100%;
+    z-index : 1;
+    grid-column : 1 / -1;
+}
+#credits {
+    color : white;
+    display : flex;
+    text-decoration: none;
+    z-index : 2;
+    position : absolute;
+    bottom: 1rem;
+    padding-left : 0.5rem
+}
+.logo-bg {
+    height : 8rem;
+    z-index : 3;
+    display : flex;
+    justify-content: left;
+    padding-left : 2rem;
+    align-items: center;
+    top : calc(50vh - 4rem); /* center of page*/
+    left : 4rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    grid-column : 2 / 2;
+}
+
+.logo-bg, #mainimage {
+    grid-row : 1 / -1;
+
+}
+
+
+.logo {
+    z-index : 2;
+    top : 5rem;
+    display : flex;
+    justify-content: center;
+    position : relative;
+    top : 1rem;
+}
+#image {
+    max-height : 100%; 
+    max-width : 100%;
 }
 
 .bottom {
@@ -88,10 +150,10 @@ body {
     align-items: center;
     gap: 0.5rem;
     border : none;
-    background-color: #076433;
+    background-color: #06552b;
     border-radius : 1rem;
     margin-top : 1rem;
     margin-bottom : 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
     color : var(--offwhite);
 }

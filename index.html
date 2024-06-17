@@ -12,11 +12,11 @@
         <div id="mainimage">
             <img id = "image" src="https://images.unsplash.com/photo-1668625598333-38b690f889d7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
             <div id="credits">
-    
+                Photo by Lexi Laginess on Unsplash
             </div>
         </div>
-        <div class="logo">
-
+        <div class="logo-bg">
+            <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" viewBox="0 0 24 24" fill="none" stroke="lightgrey" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cloud"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg></div>
         </div>
     </div>
     <div class="rightcontainer">
@@ -31,27 +31,27 @@
         <form action="./index.html" method="GET" class="form-content">
                 <div class="formblock">
                     <label for="first-name">First Name</label>
-                    <input type="text" class="textbox" id="first-name" name="first-name">
+                    <input type="text" class="textbox" id="first-name" name="first-name" maxlength="40">
                 </div>
                 <div class="formblock">
                     <label for="last-name">Last name</label>
-                    <input type="text" class="textbox" id="last-name" name="last-name">
+                    <input type="text" class="textbox" id="last-name" name="last-name" maxlength="40">
                 </div>
                 <div class="formblock">
                     <label for="email">Email</label>
-                    <input type="text" class="textbox" name="email" id="email">
+                    <input type="email" class="textbox" name="email" id="email" maxlength="50">
                 </div>
                 <div class="formblock">
                     <label for="phone">Phone</label>
-                    <input type="text" class="textbox" name="phone" id="phone">
+                    <input type="text" class="textbox" name="phone" id="phone" maxlength="10" value="0000000000">
                 </div>
                 <div class="formblock">
                     <label for="address">Address</label>
-                    <input type="text" class="textbox" name="address" id="address">
+                    <input type="text" class="textbox" name="address" id="address" maxlength="50">
                 </div>
                 <div class="formblock">
                     <label for="confirm-email">Confirm Email</label>
-                    <input type="text" class="textbox" name="confirm-email" id="confirm-password">
+                    <input type="email" class="textbox" name="confirm-email" id="confirm-password" maxlength="50">
                 </div>
             </form>
         <div class="bottom">
